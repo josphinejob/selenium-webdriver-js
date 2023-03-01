@@ -34,6 +34,7 @@ If there is a button to click Open, do it manually for the first time. Otherwise
 
 
 ** To run tests
-5. In terminal, make sure you are inside your project folder, then enter the following command: "npm test<browser-name>" OR "node google-test <browser-name>
+
+5. In terminal, make sure you are inside your project folder, then enter the following command: "npm test browser-name" OR "node google-test browser-name"
 
 Browser name can be chrome, firefox or safari, based on the drivers installed.
