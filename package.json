@@ -1,0 +1,19 @@
+{
+  "name": "selenium-webdriver-js",
+  "version": "1.0.0",
+  "description": "Web test automation with Selenium WebDriver and Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josphinejob/selenium-webdriver-js.git"
+  },
+  "author": "Josphine Job",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josphinejob/selenium-webdriver-js/issues"
+  },
+  "homepage": "https://github.com/josphinejob/selenium-webdriver-js#readme"
+}
