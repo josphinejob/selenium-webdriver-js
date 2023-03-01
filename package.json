@@ -4,7 +4,7 @@
   "description": "Web test automation with Selenium WebDriver and Javascript",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "node google-test"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/josphinejob/selenium-webdriver-js/issues"
   },
-  "homepage": "https://github.com/josphinejob/selenium-webdriver-js#readme"
+  "homepage": "https://github.com/josphinejob/selenium-webdriver-js#readme",
+  "dependencies": {
+    "selenium-webdriver": "^4.8.1"
+  }
 }
