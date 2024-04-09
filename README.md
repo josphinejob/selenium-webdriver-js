@@ -3,21 +3,30 @@ Web test automation with Selenium WebDriver
 
 Setup:
 1. Clone repository
-2. Move to the repo directory and run npm install to fetch dependencies
-3. On Mac, to set up safaridriver, open your .bash_profile (or .bashrc) file and Paste the following into the bottom of your file (updating the path as it actually is on your machine):export PATH=$PATH:/usr/bin/safaridriver.
+2. IMPORTANT- Move to the repo directory and run "npm install" to fetch dependencies
+3. Setup the browser driver.
+
+** Safari
+
+On Mac, to set up safaridriver, open your .bash_profile (or .bashrc) file and Paste the following into the bottom of your file (updating the path as it actually is on your machine):export PATH=$PATH:/usr/bin/safaridriver.
 Save and close this file, then restart your Terminal/command prompt to reapply your Bash configuration. Or run "source ~/.bash_profile".
 Then to enable automation on safari, you need to run command safaridriver --enable.
 
 
+** Chrome
 
-** Set up Chrome browser or Firefox
+From https://googlechromelabs.github.io/chrome-for-testing/, download chromedriver compatible for the version of Chrome on your system.
 
-From this page https://www.npmjs.com/package/selenium-webdriver, get download links to the actual drivers like ChromeDriver or GeckoDriver for Firefox that Selenium uses to command different browsers. Unpack them into somewhere fairly easy to navigate to, like the root of your home user directory.
+** Firefox
 
-4. Add the chromedriver and geckodriver driver's location to your system PATH variable. This should be an absolute path from the root of your hard disk, to the directory containing the drivers. For example, if we were using a macOS machine, our user name was jjob, and we put our drivers in the root of our home folder, the path would be /Users/jjob.
+From this page https://www.npmjs.com/package/selenium-webdriver, get download link for GeckoDriver for Firefox  Save it somewhere fairly easy to navigate to, like the root of your home user directory.
+
+4. Add the chromedriver and geckodriver driver's location to your system PATH variable. This should be an absolute path from the root of your hard disk, to the directory containing the drivers. For example, if we were using a macOS machine, our user name was jj, and we put our drivers in the root of our home folder, the path would be /Users/jj.
 The path you add to PATH needs to be the path to the directory containing the drivers, not the paths to the drivers themselves.
 
-For that, open your .bash_profile (or .bashrc) file and Paste the following into the bottom of your file (updating the path as it actually is on your machine):export PATH=$PATH:/Users/jjob.
+For that, open your .bash_profile (or .bashrc) file and Paste the following into the bottom of your file (updating the path as it actually is on your machine)    -->
+export PATH=$PATH:/Users/jj
+
 Save and close this file, then restart your Terminal/command prompt to reapply your Bash configuration.
 
 Check that your new paths are in the PATH variable by entering the following into your terminal:
@@ -38,3 +47,5 @@ If there is a button to click Open, do it manually for the first time. Otherwise
 5. In terminal, make sure you are inside your project folder, then enter the following command: "npm test browser-name" OR "node google-test browser-name"
 
 Browser name can be chrome, firefox or safari, based on the drivers installed.
+
+Eg: npm test chrome
